@@ -45,7 +45,7 @@ input{
     border:0;
     padding: 10px 12px;
     border-radius: 3px;
-    font-size: 22px;
+    font-size: 18px;
     border:1px solid rgba(0,0,0,0.3);
 }
 
@@ -53,8 +53,18 @@ input{
     width: 30px;
     position: absolute;
     right:27px;
-    top:57px;
+    top:55px;
     display:none;
+}
+
+.icone-oeil-mdp, .icone-oeil-confirme{
+    width: 30px;
+    position: absolute;
+    right:65px;
+    top:55px;
+    cursor: pointer;
+    display:none;
+    opacity: 0;
 }
 
 .message-alerte{
@@ -89,7 +99,7 @@ button:active{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 .l1, .l2, .l3{
@@ -98,6 +108,8 @@ button:active{
     margin:5px 5px 20px;
     position:relative;
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .l1{
